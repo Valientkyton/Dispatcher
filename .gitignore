@@ -13,5 +13,5 @@ traces/
 
 # Notebooks and OS clutter
 .ipynb_checkpoints/
-.DS_Store
-EOF
+Thumbs.db
+desktop.ini
