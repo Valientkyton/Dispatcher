@@ -15,3 +15,6 @@ traces/
 .ipynb_checkpoints/
 Thumbs.db
 desktop.ini
+
+#Folders 
+scratch/
