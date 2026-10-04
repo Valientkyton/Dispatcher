@@ -3,16 +3,16 @@ import pytest
 from dispatcher import config
 
 
-def test_default_profile_is_medium(monkeypatch):
+def test_default_profile_is_standard(monkeypatch):
     monkeypatch.delenv(config.PROFILE_ENV_VAR, raising=False)
 
-    assert config.get_active_model() == "qwen3.5:9b"
+    assert config.get_active_model() == "gemma4:26b"
 
 
-def test_small_profile(monkeypatch):
-    monkeypatch.setenv(config.PROFILE_ENV_VAR, "small")
+def test_max_profile(monkeypatch):
+    monkeypatch.setenv(config.PROFILE_ENV_VAR, "max")
 
-    assert config.get_active_model() == "qwen3.5:4b"
+    assert config.get_active_model() == "gemma4:31b"
 
 
 def test_unknown_profile_raises_error(monkeypatch):
