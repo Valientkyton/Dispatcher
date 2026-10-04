@@ -4,12 +4,11 @@ import os
 OLLAMA_BASE_URL = "http://localhost:11434/v1"
 
 MODEL_PROFILES = {
-    "small": "qwen3.5:4b",
-    "medium": "qwen3.5:9b",
-    "large": "qwen3.5:27b",
+    "standard": "gemma4:26b",
+    "max": "gemma4:31b"
 }
 
-DEFAULT_PROFILE = "medium"
+DEFAULT_PROFILE = "standard"
 PROFILE_ENV_VAR = "DISPATCHER_PROFILE"
 
 
